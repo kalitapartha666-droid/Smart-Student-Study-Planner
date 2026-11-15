@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Student Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Smart Study Planner</h1>
+        <p>Your personal academic productivity assistant</p>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Welcome, Student! 👋</h2>
+            <p>Plan your studies, manage assignments and achieve your goals.</p>
+        </section>
+
+        <section class="stats">
+            <div class="card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+        </section>
+
+        <section class="planner">
+            <h2>Add a Study Task</h2>
+
+            <form id="taskForm">
+                <input
+                    type="text"
+                    id="taskName"
+                    placeholder="Enter your task"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Subject name"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="deadline"
+                    required
+                >
+
+                <button type="submit">+ Add Task</button>
+            </form>
+        </section>
+
+        <section class="tasks">
+            <h2>My Study Tasks</h2>
+            <div id="taskList">
+                <p class="empty">No tasks added yet. Start planning!</p>
+            </div>
+        </section>
+
+        <section class="progress">
+            <h2>Study Progress</h2>
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+            <p id="progressText">0% Completed</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Smart Student Study Planner | B.Tech CSE Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
